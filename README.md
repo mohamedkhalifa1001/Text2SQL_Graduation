@@ -19,8 +19,8 @@ The files in the repo do the following:
 here we Finetunes the LLaMA2  model using the training dataset with parameter efficient fine-tuning via QLoRA (adapter weights) — a lightweight technique that enables training on consumer GPUs.
 After training, we perform inference on sample questions from the test set.The model’s generated SQL is very close to the ground truth responses — confirming that it successfully learned the task
 
--Text2SQL FineTuned_V3.ipynb (GPU Needed) :
-here we re-Finetune  the LLaMA2  model again using the training dataset with parameter efficient fine-tuning via QLoRA (adapter weights) but we change the Lora configration training arguements (ex: increasing training time > max_steps= 510) After the training again , we perform inference on sample questions from the test set.The model’s generated SQL is exactly close to the ground truth responses — confirming that it successfully learned the task very well also the inference time the model taken become much smaller than the last time .
+- Text2SQL FineTuned_V3.ipynb (GPU Needed) :
+  here we re-Finetune  the LLaMA2  model again using the training dataset with parameter efficient fine-tuning via QLoRA (adapter weights) but we change the Lora configration training arguements (ex: increasing training time > max_steps= 510) After the training again , we perform inference on sample questions from the test set.The model’s generated SQL is exactly close to the ground truth responses — confirming that it successfully learned the task very well also the inference time the model taken become much smaller than the last time .
 
 Text2SQL_Evaluate_Llama2GPTQv3.ipynb (GPU Needed) - Runs Inference on test data using the LLama2GPTQ Model. Takes ~40mins.
 
